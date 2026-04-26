@@ -4,6 +4,7 @@ import Benner from '../layouts/Benner'
 import Vehicles from '../layouts/Vehicles'
 import TheApp from '../layouts/TheApp'
 import Locations from '../layouts/Locations'
+import Principles from '../layouts/Principles'
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
    <Vehicles/>
    <TheApp/>
    <Locations/>
+   <Principles/>
    </>
   )
 }
