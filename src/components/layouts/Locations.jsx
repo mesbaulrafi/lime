@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 const cities = [
   {
     name: "New York",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&q=80",
+    image: "/src/assets/NewYork.png",
   },
   {
     name: "San Francisco",
-    image: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=600&q=80",
+    image: "/src/assets/SanFrancisco.png",
   },
   {
     name: "Washington, DC",
