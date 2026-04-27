@@ -14,11 +14,10 @@ const Vehicles = () => {
             <h5 className='text-[#00B200] text-xl '>Our Vehicles</h5>
             <h3 className='text-[40px] '>Discover the Gen4</h3>
         </div>
-        <Flex className={'justify-center gap-x-5 '}>
-            <Link to={''}><Images imgSrc={Bike1}/></Link>
-            <Link to={''}><Images imgSrc={Bike2}/></Link>
-            
-        </Flex>
+        <div className="lg:flex justify-center gap-x-5 ">
+           <Link to={''}><Images className={'pb-5'} imgSrc={Bike1}/></Link>
+            <Link to={''}><Images className={'pb-5'} imgSrc={Bike2}/></Link>
+        </div>
     </Conteinar>
     </div>
   )

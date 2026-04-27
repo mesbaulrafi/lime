@@ -16,11 +16,11 @@ const TheApp = () => {
             <h5 className='text-[#00B200] text-xl '>The App</h5>
             <h3 className='text-[40px] '>How to Lime</h3>
         </div>
-        <Flex className={'gap-x-5'}>
-            <Link><Images imgSrc={AppImg1}/></Link>
-            <Link><Images imgSrc={AppImg2}/></Link>
-            <Link><Images imgSrc={AppImg3}/></Link>
-        </Flex>
+        <div className="lg:flex  gap-x-5">
+            <Link><Images className={'pb-5'} imgSrc={AppImg1}/></Link>
+            <Link><Images className={'pb-5'} imgSrc={AppImg2}/></Link>
+            <Link><Images className={'pb-5'} imgSrc={AppImg3}/></Link>
+        </div>
     </Conteinar>
    </div>
    </>
