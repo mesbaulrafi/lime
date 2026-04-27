@@ -22,80 +22,48 @@ const Footer = () => {
             </div>
             {/* Footer Menu */}
             <div className="flex gap-x-[150px]">
+              {/* Join Us */}
               <div className="">
-                {/* Join Us */}
-                <h6 className="font-poppins text-[20px] pb-8.5">Join Us</h6>
+                <h6 className="font-poppins text-[20px] pb-8">Join Us</h6>
                 <ul className="font-poppins text-[14px] text-[#939292]">
-                  <Link to={"/"}>
-                    <li className="py-2.5">Careers</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">E-Bike</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">E-Scooter</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Sustainability</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Innovation</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Safety</li>
-                  </Link>
+                  <Link to={"/"}><li className="py-2.5">Careers</li></Link>
+                  <Link to={"/"}><li className="py-2.5">E-Bike</li></Link>
+                  <Link to={"/"}><li className="py-2.5">E-Scooter</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Sustainability</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Innovation</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Safety</li></Link>
                 </ul>
               </div>
               {/* About */}
               <div className="">
-                <h6 className="font-poppins text-[20px] pb-8.5">About</h6>
+                <h6 className="font-poppins text-[20px] pb-8">About</h6>
                 <ul className="font-poppins text-[14px] text-[#939292]">
-                  <Link to={"/"}>
-                    <li className="py-2.5">Community</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Lime Times Blog</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Press</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Partners</li>
-                  </Link>
+                  <Link to={"/"}><li className="py-2.5">Community</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Lime Times Blog</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Press</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Partners</li></Link>
                 </ul>
               </div>
               {/* Programs */}
               <div className="">
-                <h6 className="font-poppins text-[20px] pb-8.5">Programs</h6>
+                <h6 className="font-poppins text-[20px] pb-8">Programs</h6>
                 <ul className="font-poppins text-[14px] text-[#939292]">
-                  <Link to={"/"}>
-                    <li className="py-2.5">Advertise</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Lime Access</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Lime Hero</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Lime Assist</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Insurance</li>
-                  </Link>
-                  <Link to={"/"}>
-                    <li className="py-2.5">Our Cities</li>
-                  </Link>
+                  <Link to={"/"}><li className="py-2.5">Advertise</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Lime Access</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Lime Hero</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Lime Assist</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Insurance</li></Link>
+                  <Link to={"/"}><li className="py-2.5">Our Cities</li></Link>
                 </ul>
               </div>
             </div>
-            {/* Location */}
+            {/* Location & Social */}
             <div className="">
               <h6 className="font-poppins text-[20px] text-[#939292] pb-9">Find Location</h6>
               <h6 className="font-poppins text-[20px] text-[#939292] pb-9">Get help</h6>
-              <h6 className="font-poppins text-[20px] text-[#939292] pb-10.5">Sitemap</h6>
-              {/* Icon */}
-              <div className="flex gap-x-3 text-[35px]">
+              <h6 className="font-poppins text-[20px] text-[#939292] pb-10">Sitemap</h6>
+              {/* Social Icons */}
+              <div className="flex gap-x-3">
                 <a href=""><Images imgSrc={Twitter}/></a>
                 <a href=""><Images imgSrc={Facebook}/></a>
                 <a href=""><Images imgSrc={Linkend}/></a>
@@ -104,11 +72,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="font-poppins text-[12px] pt-[] pb-[57px]">
-            <ul className="flex ">
+          {/* Bottom Bar */}
+          <div className="font-poppins text-[12px] pb-[57px]">
+            <ul className="flex items-center">
               <li className="mr-[265px]">2024 Lime</li>
               <li className="mr-10 underline">User Agreement</li>
-              <li className="mr-10 underline">Privacy Noticet</li>
+              <li className="mr-10 underline">Privacy Notice</li>
               <li className="mr-10 underline">Data Request</li>
               <li className="mr-10 underline">Research</li>
               <li className="mr-10 underline">Legal Bases</li>
