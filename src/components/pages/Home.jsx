@@ -5,6 +5,7 @@ import Vehicles from '../layouts/Vehicles'
 import TheApp from '../layouts/TheApp'
 import Locations from '../layouts/Locations'
 import Principles from '../layouts/Principles'
+import Blog from '../layouts/Blog'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
    <TheApp/>
    <Locations/>
    <Principles/>
+   <Blog/>
    </>
   )
 }
