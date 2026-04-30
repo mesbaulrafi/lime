@@ -73,45 +73,45 @@ const team = [
 
 // ─── Sections ─────────────────────────────────────────────────────────────────
 
-// const Hero = () => (
-//   <section className="relative min-h-[420px] flex items-center overflow-hidden bg-gray-950">
-//     {/* Decorative green blobs */}
-//     <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#00d64f] opacity-20 blur-3xl pointer-events-none" />
-//     <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-[#00d64f] opacity-10 blur-2xl pointer-events-none" />
+const Hero = () => (
+  <section className="relative min-h-[420px] flex items-center overflow-hidden bg-gray-950">
+    {/* Decorative green blobs */}
+    <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#00d64f] opacity-20 blur-3xl pointer-events-none" />
+    <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-[#00d64f] opacity-10 blur-2xl pointer-events-none" />
 
-//     <Container className="relative z-10 py-24">
-//       <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-3">About Lime</p>
-//       <h1 className="text-white font-extrabold text-5xl sm:text-6xl leading-tight max-w-2xl">
-//         Moving cities <br />
-//         <span className="text-[#00d64f]">without the carbon.</span>
-//       </h1>
-//       <p className="mt-6 text-gray-300 text-lg max-w-xl leading-relaxed">
-//         Lime builds technology-powered transportation solutions that are shared, affordable, and emissions-free — so everyone can move freely while the planet breathes easier.
-//       </p>
-//       <a
-//         href="#mission"
-//         className="inline-block mt-8 bg-[#00d64f] hover:bg-[#00b843] text-black font-bold px-7 py-3 rounded-full transition-all duration-200 shadow-lg shadow-lime-500/30"
-//       >
-//         Our Mission ↓
-//       </a>
-//     </Container>
-//   </section>
-// )
+    <Container className="relative z-10 py-24">
+      <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-3">About Lime</p>
+      <h1 className="text-white font-extrabold text-5xl sm:text-6xl leading-tight max-w-2xl">
+        Moving cities <br />
+        <span className="text-[#00d64f]">without the carbon.</span>
+      </h1>
+      <p className="mt-6 text-gray-300 text-lg max-w-xl leading-relaxed">
+        Lime builds technology-powered transportation solutions that are shared, affordable, and emissions-free — so everyone can move freely while the planet breathes easier.
+      </p>
+      <a
+        href="#mission"
+        className="inline-block mt-8 bg-[#00d64f] hover:bg-[#00b843] text-black font-bold px-7 py-3 rounded-full transition-all duration-200 shadow-lg shadow-lime-500/30"
+      >
+        Our Mission ↓
+      </a>
+    </Container>
+  </section>
+)
 
-// const Stats = () => (
-//   <section className="bg-[#00d64f] py-14">
-//     <Container>
-//       <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-//         {stats.map((s) => (
-//           <div key={s.label}>
-//             <p className="text-black font-extrabold text-4xl sm:text-5xl">{s.value}</p>
-//             <p className="text-black/70 font-medium text-sm mt-1 uppercase tracking-wider">{s.label}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </Container>
-//   </section>
-// )
+const Stats = () => (
+  <section className="bg-[#00d64f] py-14">
+    <Container>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+        {stats.map((s) => (
+          <div key={s.label}>
+            <p className="text-black font-extrabold text-4xl sm:text-5xl">{s.value}</p>
+            <p className="text-black/70 font-medium text-sm mt-1 uppercase tracking-wider">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </Container>
+  </section>
+)
 
 const Mission = () => (
   <section id="mission" className="py-24 bg-white">
