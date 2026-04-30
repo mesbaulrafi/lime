@@ -1,13 +1,9 @@
 import React from 'react'
+import Conteinar from '../Conteinar'
+import Button from '../Button'
 
-// Container component (matching your project structure)
-const Container = ({ children, className = '' }) => (
-  <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
-    {children}
-  </div>
-)
 
-// ─── Data ────────────────────────────────────────────────────────────────────
+
 
 const stats = [
   { value: '30M+', label: 'Riders Worldwide' },
@@ -71,15 +67,15 @@ const team = [
   { name: 'David Richter', role: 'Chief Revenue Officer', initials: 'DR' },
 ]
 
-// ─── Sections ─────────────────────────────────────────────────────────────────
+// ─── Sections ──────
 
 const Hero = () => (
-  <section className="relative min-h-[420px] flex items-center overflow-hidden bg-gray-950">
+  <section className="relative  flex items-center overflow-hidden bg-[#353434] py-25">
     {/* Decorative green blobs */}
-    <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#00d64f] opacity-20 blur-3xl pointer-events-none" />
-    <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-[#00d64f] opacity-10 blur-2xl pointer-events-none" />
+    <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[#00d64e] opacity-20 blur-3xl pointer-events-none" />
+    <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-[#00d64e] opacity-10 blur-2xl pointer-events-none" />
 
-    <Container className="relative z-10 py-24">
+    <Conteinar className="relative z-10 py-24">
       <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-3">About Lime</p>
       <h1 className="text-white font-extrabold text-5xl sm:text-6xl leading-tight max-w-2xl">
         Moving cities <br />
@@ -88,34 +84,29 @@ const Hero = () => (
       <p className="mt-6 text-gray-300 text-lg max-w-xl leading-relaxed">
         Lime builds technology-powered transportation solutions that are shared, affordable, and emissions-free — so everyone can move freely while the planet breathes easier.
       </p>
-      <a
-        href="#mission"
-        className="inline-block mt-8 bg-[#00d64f] hover:bg-[#00b843] text-black font-bold px-7 py-3 rounded-full transition-all duration-200 shadow-lg shadow-lime-500/30"
-      >
-        Our Mission ↓
-      </a>
-    </Container>
+      <Button btnText={'Our Mission ↓'} className={'mt-5'}/>
+    </Conteinar>
   </section>
 )
 
 const Stats = () => (
-  <section className="bg-[#00d64f] py-14">
-    <Container>
+  <section className="bg-[#555] py-14">
+    <Conteinar>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
         {stats.map((s) => (
           <div key={s.label}>
-            <p className="text-black font-extrabold text-4xl sm:text-5xl">{s.value}</p>
+            <p className="text-white font-extrabold text-4xl sm:text-5xl">{s.value}</p>
             <p className="text-black/70 font-medium text-sm mt-1 uppercase tracking-wider">{s.label}</p>
           </div>
         ))}
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
 const Mission = () => (
   <section id="mission" className="py-24 bg-white">
-    <Container>
+    <Conteinar>
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Text */}
         <div>
@@ -145,13 +136,13 @@ const Mission = () => (
           </div>
         </div>
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
 const Values = () => (
   <section className="py-24 bg-gray-50">
-    <Container>
+    <Conteinar>
       <div className="text-center mb-14">
         <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-2">Why Lime</p>
         <h2 className="text-gray-900 font-extrabold text-4xl">Our Core Principles</h2>
@@ -170,13 +161,13 @@ const Values = () => (
           </div>
         ))}
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
 const Timeline = () => (
   <section className="py-24 bg-white">
-    <Container>
+    <Conteinar>
       <div className="text-center mb-14">
         <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-2">Our Journey</p>
         <h2 className="text-gray-900 font-extrabold text-4xl">How We Got Here</h2>
@@ -202,13 +193,13 @@ const Timeline = () => (
           ))}
         </div>
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
 const Team = () => (
   <section className="py-24 bg-gray-950">
-    <Container>
+    <Conteinar>
       <div className="text-center mb-14">
         <p className="text-[#00d64f] font-semibold text-sm tracking-widest uppercase mb-2">Leadership</p>
         <h2 className="text-white font-extrabold text-4xl">Meet the Team</h2>
@@ -219,21 +210,21 @@ const Team = () => (
             key={member.name}
             className="bg-gray-900 border border-gray-800 rounded-3xl p-8 flex flex-col items-center text-center hover:border-[#00d64f]/40 transition-colors duration-300 group"
           >
-            <div className="w-20 h-20 rounded-full bg-[#00d64f]/10 border-2 border-[#00d64f]/30 group-hover:border-[#00d64f] transition-colors flex items-center justify-center mb-5">
+            <div className="w-20 h-20 rounded-full bg-[#]/10 border-2 border-[#00d64f]/30 group-hover:border-[#00d64f] transition-colors flex items-center justify-center mb-5">
               <span className="text-[#00d64f] font-extrabold text-xl">{member.initials}</span>
             </div>
             <p className="text-white font-bold text-base">{member.name}</p>
             <p className="text-gray-400 text-sm mt-1">{member.role}</p>
           </div>
-        ))}
+        ))}00d64f
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
 const CTA = () => (
   <section className="py-24 bg-[#00d64f]">
-    <Container>
+    <Conteinar>
       <div className="text-center max-w-2xl mx-auto">
         <h2 className="text-black font-extrabold text-4xl sm:text-5xl mb-6 leading-tight">
           Ready to ride green?
@@ -256,11 +247,11 @@ const CTA = () => (
           </a>
         </div>
       </div>
-    </Container>
+    </Conteinar>
   </section>
 )
 
-// ─── Main Component ───────────────────────────────────────────────────────────
+// Main Component 
 
 const About = () => {
   return (
