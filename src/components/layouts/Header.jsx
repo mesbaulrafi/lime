@@ -9,6 +9,7 @@ import { IoMdMenu } from "react-icons/io"
 import { IoMdClose } from "react-icons/io"
 
 const navLinks = [
+  { label: "Home", path: "/" },
   { label: "About us", path: "/about" },
   { label: "Why Lime", path: "/why-lime" },
   { label: "Vehicles", path: "/vehicles" },
