@@ -55,7 +55,7 @@ const Error = () => {
           </div>
 
           {/* Popular pages */}
-          {/* <div className="border-t border-white/10 pt-8 w-full">
+          <div className="border-t border-white/10 pt-8 w-full">
             <p className="text-gray-600 text-xs mb-4">Popular pages</p>
             <div className="flex flex-wrap gap-2 justify-center">
               {popularLinks.map((link) => (
@@ -68,7 +68,7 @@ const Error = () => {
                 </Link>
               ))}
             </div>
-          </div> */}
+          </div>
 
         </div>
       </Conteinar>
