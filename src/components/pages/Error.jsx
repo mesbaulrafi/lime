@@ -41,7 +41,7 @@ const Error = () => {
           </p>
 
           {/* CTA Buttons */}
-          {/* <div className="flex flex-wrap gap-3 justify-center mb-12">
+          <div className="flex flex-wrap gap-3 justify-center mb-12">
             <Link to="/">
               <button className="bg-[#00c851] hover:bg-[#00b043] text-black font-medium text-sm px-6 py-3 rounded-full transition-colors duration-200">
                 Go home
@@ -52,7 +52,7 @@ const Error = () => {
                 Get help
               </button>
             </Link>
-          </div> */}
+          </div>
 
           {/* Popular pages */}
           {/* <div className="border-t border-white/10 pt-8 w-full">
